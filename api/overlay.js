@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 app.use(express.json());
 
-app.post('/api/overlay', async (req, res) => {
+app.post('/overlay', async (req, res) => {  // Removed /api since Vercel's routing will handle it
   const { video1Url, video2Url } = req.body;
 
   if (!video1Url || !video2Url) {
@@ -33,5 +33,8 @@ app.post('/api/overlay', async (req, res) => {
     cleanUpFiles([video1Path, video2Path, outputPath]);
   }
 });
+
+module.exports = app;
+
 
 module.exports = app;
