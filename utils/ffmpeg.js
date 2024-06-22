@@ -35,5 +35,3 @@ const cleanUpFiles = (filePaths) => {
 
 module.exports = { downloadVideo, overlayVideos, cleanUpFiles };
 
-
-module.exports = { downloadVideo, overlayVideos, cleanUpFiles };
