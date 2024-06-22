@@ -1,0 +1,13 @@
+{
+  "name": "ffmpeg-overlay-api",
+  "version": "1.0.0",
+  "description": "A simple API to overlay two videos using FFmpeg",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/overlay.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
